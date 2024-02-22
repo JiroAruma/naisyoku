@@ -12,7 +12,7 @@ app = FastAPI()
 
 
 @app.post('/')
-async def kkshk(request: Request):
+async def main(request: Request):
     # X-Line-Signature ヘッダーの値を取得
     signature = request.headers.get('X-Line-Signature', '')
 
